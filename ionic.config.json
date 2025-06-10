@@ -1,0 +1,7 @@
+{
+  "name": "authApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
