@@ -1,0 +1,21 @@
+.login-background {
+  position: relative;
+  background: url('https://static.vecteezy.com/system/resources/thumbnails/022/451/108/small/generative-ai-illustration-of-a-shiny-blue-metallic-background-photo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* Overlay opcional para mejorar contraste */
+.login-background::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.4); /* sombra oscura semi-transparente */
+  z-index: 0;
+}
+
+/* Asegúrate que el contenido esté por encima del overlay */
+.login-background > * {
+  position: relative;
+  z-index: 1;
+}
